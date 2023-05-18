@@ -5,7 +5,7 @@ import joblib
 
 st.subheader('Nhận dạng khuôn mặt')
 FRAME_WINDOW = st.image([])
-cap = cv.VideoCapture(0)
+cap = cv.VideoCapture(1)
 
 if 'stop' not in st.session_state:
     st.session_state.stop = False
@@ -90,4 +90,4 @@ if __name__ == '__main__':
 
         # Visualize results
         FRAME_WINDOW.image(frame, channels='BGR')
-    cv.destroyAllWindows()
+    # cv.destroyAllWindows()
