@@ -4,7 +4,7 @@ import cv2 as cv
 
 st.subheader('Phát hiện khuôn mặt')
 FRAME_WINDOW = st.image([])
-deviceId = 0
+deviceId = -1
 cap = cv.VideoCapture(deviceId)
 
 
