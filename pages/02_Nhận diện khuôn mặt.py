@@ -4,7 +4,7 @@ import cv2 as cv
 
 st.subheader('Phát hiện khuôn mặt')
 FRAME_WINDOW = st.image([])
-deviceId = -1
+deviceId = 0
 cap = cv.VideoCapture(deviceId)
 
 
@@ -77,4 +77,4 @@ while True:
 
     # Visualize results
     FRAME_WINDOW.image(frame, channels='BGR')
-# cv.destroyAllWindows()
+cv.destroyAllWindows()
