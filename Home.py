@@ -4,6 +4,7 @@ import numpy as np
 from PIL import Image
 import cv2
 import streamlit.components.v1 as stc
+print(cv2.__version__)
 #link file css
 def local_css(file_name):
 	with open(file_name) as f:
